@@ -1,8 +1,8 @@
-name: telebot_101
+name: telebot_check
 
 on: 
   schedule:
-    - cron: "5/10 * * * *"
+    - cron: "0 * * * *"
   
 jobs:
   run:
@@ -18,5 +18,5 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: telebot_101
-      run: python telebot_101.py
+    - name: telebot_check
+      run: telebot_check.py
