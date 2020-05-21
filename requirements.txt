@@ -1,0 +1,2 @@
+telepot==12.7
+DateTime==4.3
