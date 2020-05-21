@@ -1,7 +1,8 @@
 name: telebot_101
 
-on: push
-
+on: 
+  schedule:
+    - cron: " 10 * * * *"
   
 jobs:
   run:
