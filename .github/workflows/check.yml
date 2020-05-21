@@ -1,4 +1,4 @@
-name: telebot_check
+name: check
 
 on: 
   schedule:
