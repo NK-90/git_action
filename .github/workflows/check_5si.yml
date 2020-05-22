@@ -1,4 +1,4 @@
-name: telebot_101
+name: telebot_5si
 
 on:
   schedule:
@@ -18,5 +18,5 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: telebot_101
-      run: python telebot_101.py
+    - name: telebot_5si
+      run: python telebot_5si.py
