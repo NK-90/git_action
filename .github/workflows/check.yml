@@ -1,8 +1,6 @@
-name: check
+name: check to check
 
-on:
-  schedule:
-    - cron: "0 * * * *"
+on:push
   
 jobs:
   run:
