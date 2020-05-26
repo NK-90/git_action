@@ -2,7 +2,7 @@ name: telebot_5si to check bang
 
 on: 
   schedule:
-    - cron: '59 -5 * * *'
+    - cron: '59 19 * * *'
 
 jobs:
   run:
@@ -19,4 +19,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: telebot_5si
-      run: python telebot_101.py
+      run: python telebot_5si.py
