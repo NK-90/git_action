@@ -1,6 +1,6 @@
 name: telebot_5si to check bang
 
-on:push
+on: push
 
 jobs:
   run:
