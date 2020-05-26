@@ -4,7 +4,7 @@ def telebot(start1,start2):
 
     year  = datetime.datetime.today().year
     month = datetime.datetime.today().month
-    day   = datetime.datetime.today().day -1
+    day   = datetime.datetime.today().day 
     week = ['월','화','수','목','금','토','일']
     w_num = datetime.datetime.today().weekday() +1
     w_day = week[w_num]
@@ -25,7 +25,7 @@ def telebot(start1,start2):
 🙏나는 행복을 전하는 수행자입니다.
 
 https://pray.jungto.org
-""" % (year + 544, month, day, w_day,left_days1,left_days2)
+""" % (year + 544, month, day+1, w_day,left_days1+1,left_days2+1)
 
 
     chat_id = '-399667322'
