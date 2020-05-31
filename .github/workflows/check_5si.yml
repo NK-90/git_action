@@ -1,8 +1,8 @@
-name: telebot_5si
+name: telebot_5si to check bang
 
-on:
-  schedule:
-    - cron: "54 19 * * *"
+on: push
+
+
 
 jobs:
   run:
