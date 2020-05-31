@@ -5,8 +5,8 @@ def telebot(start1,start2):
     year  = datetime.datetime.today().year
     month = datetime.datetime.today().month
     day   = datetime.datetime.today().day 
-    week = ['월','화','수','목','금','토','일']
-    w_num = datetime.datetime.today().weekday() +1
+    week = ['화','수','목','금','토','일','월']
+    w_num = datetime.datetime.today().weekday() 
     w_day = week[w_num]
     left1 = datetime.datetime.now() -  datetime.datetime(start1[0], start1[1], start1[2])
     left2 = datetime.datetime.now() -  datetime.datetime(start2[0], start2[1], start2[2])
