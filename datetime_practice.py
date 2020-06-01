@@ -2,8 +2,15 @@ import datetime
 from pytz import timezone, utc
 
 
+KST = timezone('Asia/Seoul')
 
-now =
+now = datetime.datetime.utcnow()
 
 
-print(datetime.datetime.now())
+
+
+now = utc.localize(now).astimezone(KST)
+
+
+
+print(now)

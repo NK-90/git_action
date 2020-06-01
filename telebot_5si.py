@@ -1,8 +1,13 @@
 import telepot
 import datetime
+from pytz import timezone, utc
+KST = timezone('Asia/Seoul')
+now = datetime.datetime.utcnow()
+now = utc.localize(now).astimezone(KST)
+
+
 def telebot(start1,start2):
 
-    print(datetime.datetime.now())
 
 
     year  = datetime.datetime.today().year
@@ -16,7 +21,7 @@ def telebot(start1,start2):
     left_days1 = left1.days +1
     left_days2 = left2.days +1
     now = datetime.datetime.now()
-
+    now.replace(tzinfo=KST)
 
     word = """
 [불기 %d년 %d월 %d일 %s요일]
