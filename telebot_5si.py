@@ -2,6 +2,9 @@ import telepot
 import datetime
 def telebot(start1,start2):
 
+    print(datetime.datetime.now())
+
+
     year  = datetime.datetime.today().year
     month = datetime.datetime.today().month
     day   = datetime.datetime.today().day 
@@ -12,7 +15,7 @@ def telebot(start1,start2):
     left2 = datetime.datetime.now() -  datetime.datetime(start2[0], start2[1], start2[2])
     left_days1 = left1.days +1
     left_days2 = left2.days +1
-
+    print(datetime.datetime.now)
 
 
     word = """
@@ -34,6 +37,8 @@ https://pray.jungto.org
     bot.sendMessage(chat_id, word)
 
 
+
+
     return
 
 
@@ -42,3 +47,4 @@ https://pray.jungto.org
 start1 = [2020, 3,  9]
 start2 = [2020, 3, 25]
 telebot(start1,start2)
+
