@@ -33,8 +33,7 @@ def telebot(start1,start2):
 🙏나는 행복을 전하는 수행자입니다.
 
 https://pray.jungto.org
-%s
-""" % (year + 544, month, day, w_day,left_days1,left_days2,now)
+""" % (year + 544, month, day, w_day,left_days1,left_days2)
 
 
     chat_id = '-399667322'
