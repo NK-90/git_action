@@ -20,8 +20,8 @@ def telebot(start1,start2):
     left2 = datetime.datetime.now() -  datetime.datetime(start2[0], start2[1], start2[2])
     left_days1 = left1.days +1
     left_days2 = left2.days +1
-    now = datetime.datetime.now()
-    now.replace(tzinfo=KST)
+
+
 
     word = """
 [불기 %d년 %d월 %d일 %s요일]
