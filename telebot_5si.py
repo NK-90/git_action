@@ -15,7 +15,7 @@ def telebot(start1,start2):
     left2 = datetime.datetime.now() -  datetime.datetime(start2[0], start2[1], start2[2])
     left_days1 = left1.days +1
     left_days2 = left2.days +1
-    print(datetime.datetime.now)
+    now = datetime.datetime.now()
 
 
     word = """
@@ -28,7 +28,8 @@ def telebot(start1,start2):
 🙏나는 행복을 전하는 수행자입니다.
 
 https://pray.jungto.org
-""" % (year + 544, month, day, w_day,left_days1,left_days2)
+%s
+""" % (year + 544, month, day, w_day,left_days1,left_days2,now)
 
 
     chat_id = '-399667322'
