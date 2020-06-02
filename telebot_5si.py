@@ -14,11 +14,9 @@ def telebot(start1,start2):
     year = int(now.strftime('%Y'))
     month = int(now.strftime('%m'))
     day = int(now.strftime('%d'))
-    week = ['화','수','목','금','토','일','월']
-    w_num = datetime.datetime.today().weekday()
-    w_day = week[w_num]
-    left1 = datetime.datetime.now() -  datetime.datetime(start1[0], start1[1], start1[2])
-    left2 = datetime.datetime.now() -  datetime.datetime(start2[0], start2[1], start2[2])
+    w_day = ['월', '화', '수', '목', '금', '토', '일'][datetime.datetime(year, month, day).weekday()]
+    left1 = datetime.datetime(year, month, day) -  datetime.datetime(start1[0], start1[1], start1[2])
+    left2 = datetime.datetime(year, month, day) -  datetime.datetime(start2[0], start2[1], start2[2])
     left_days1 = left1.days +1
     left_days2 = left2.days +1
 
