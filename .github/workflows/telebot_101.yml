@@ -18,4 +18,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: telebot_101
-      run: python telebot_101.py
+      run: python telebot_.py
