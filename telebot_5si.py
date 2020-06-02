@@ -2,18 +2,19 @@ import telepot
 import datetime
 from pytz import timezone, utc
 KST = timezone('Asia/Seoul')
-now = datetime.datetime.utcnow()
-now = utc.localize(now).astimezone(KST)
+now = datetime.datetime.now(KST)
+
+
 
 
 def telebot(start1,start2):
 
 
 
-    year  = datetime.datetime.today().year
-    month = datetime.datetime.today().month
-    day   = datetime.datetime.today().day 
-    week = ['월','화','수','목','금','토','일']
+    year = int(now.strftime('%Y'))
+    month = int(now.strftime('%m'))
+    day = int(now.strftime('%d'))
+    week = ['화','수','목','금','토','일','월']
     w_num = datetime.datetime.today().weekday()
     w_day = week[w_num]
     left1 = datetime.datetime.now() -  datetime.datetime(start1[0], start1[1], start1[2])
