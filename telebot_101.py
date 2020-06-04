@@ -32,7 +32,7 @@ https://pray.jungto.org
 """ % (year + 544, month, day, w_day,left_days1,left_days2)
 
 
-    chat_id = '-399667322'
+    chat_id = '-357408712'
     my_token = '1210478577:AAFZTeyvx3DJU4b6WFzg9J6IhxnA4myEmrQ'
     bot = telepot.Bot(my_token)
     bot.sendMessage(chat_id, word)
